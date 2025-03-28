@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 7</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffe4ec; /* Soft pastel pink */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 80px;
+            box-shadow: 0px 8px 20px rgba(255, 105, 180, 0.2);
+            border: 4px solid #ff99cc;
+            max-width: 320px;
+            position: relative;
+            overflow: hidden;
+        }
+        .ribbon {
+            background: #ff66b2;
+            color: white;
+            font-family: 'Pacifico', cursive;
+            font-size: 18px;
+            padding: 8px 15px;
+            border-radius: 15px;
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+        }
+        .image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ff99cc;
+            margin-top: 15px;
+        }
+        .title {
+            font-family: 'Pacifico', cursive;
+            color: #ff66b2;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .text {
+            color: #555;
+            font-size: 15px;
+            margin-top: 5px;
+        }
+        .heart {
+            color: #ff4081;
+            font-size: 18px;
+            animation: bounce 1.5s infinite alternate;
+            display: inline-block;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-5px); }
+        }
+         .animated-heart {
+            position: absolute;
+            color: #ff4081;
+            font-size: 20px;
+            animation: float 3s infinite;
+            opacity: 0.8;
+        }
+          .btn {
+            font-family: 'Pacifico', cursive;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            background: #ff99cc;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0px 5px 10px rgba(255, 105, 180, 0.3);
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+        .btn:hover {
+            background: #ff66b2;
+            box-shadow: 0px 8px 20px rgba(255, 105, 180, 0.5);
+            transform: scale(1.1);
+        }
+        .btn:active {
+            transform: scale(0.9);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); opacity: 1; }
+            50% { transform: translateY(-15px); opacity: 0.6; }
+            100% { transform: translateY(0px); opacity: 1; }
+        }
+        .heart1 { top: -10px; left: 10px; animation-delay: 0s; }
+        .heart2 { top: -15px; right: 20px; animation-delay: 1s; }
+        .heart3 { bottom: -10px; left: 30px; animation-delay: 2s; }
+        .heart4 { bottom: -15px; right: 10px; animation-delay: 1.5s; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="ribbon">🎀Carmellia🎀</div>
+        <img src="carmellia.jpg" class="image" alt="Cute Image">
+        <div class="title">So Adorable! 💕</div>
+        <p class="text">Camellias are elegant flowers with waxy petals in shades of pink, red, and white. They symbolize admiration, perfection, and gratitude. Native to Asia, camellias are also significant in tea culture since Camellia sinensis leaves are used to make tea.
+         <span class="heart">❤</span></p>
+        <div class="buttons">
+            <a href="azalea.html" class="btn">← Back</a>
+            <a href="lotus.html" class="btn">Next →</a>
+        </div>
+        </div>
+        <span class="animated-heart heart1">❤</span>
+        <span class="animated-heart heart2">❤</span>
+        <span class="animated-heart heart3">❤</span>
+        <span class="animated-heart heart4">❤</span>
+        
+    </div>
+</body>
+</html>
